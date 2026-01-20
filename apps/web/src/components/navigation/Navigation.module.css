@@ -1,0 +1,225 @@
+/* web/src/components/navigation/Navigation.module.css */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 260px;
+  border-right: 1px solid #dedede;
+  background: linear-gradient(
+    to top,
+    #35446c 0%,
+    #3f7acc 40%,
+    #35446c 87%
+  );
+}
+
+.section {
+  padding: 12px 8px;
+  overflow-y: auto;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 12px 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.rowWrap {
+  margin-bottom: 4px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  min-height: 38px;
+  padding: 8px 10px;
+  user-select: none;
+}
+
+.row:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.rowActive {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.rowHasChildren .rowLabel {
+  font-weight: 600;
+}
+
+.rowLink,
+.rowButton {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.rowLabel {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.icon {
+  width: 18px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.chevronButton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.chevronButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.chevron {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.children {
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badgeNeutral {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.badgeInfo {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.badgeWarning {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* Mobile top nav */
+
+.mobileTop {
+  width: 100%;
+}
+
+.mobileBar {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0 10px;
+  background: #fff;
+}
+
+.hamburger {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.appName {
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.mobileRightSlot {
+  margin-left: auto;
+}
+
+.mobileMenu {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 10px;
+}
+
+.mobileMenuItem {
+  padding: 6px 0;
+}
+
+.mobileGroupLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.mobileSubLabel {
+  padding: 8px 10px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.mobileLink,
+.mobileLinkActive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mobileLink:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.mobileLinkActive {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.mobileChildren {
+  padding-left: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.mobileSubLink,
+.mobileSubLinkActive {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.mobileSubLink:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.mobileSubLinkActive {
+  background: rgba(0, 0, 0, 0.06);
+}
