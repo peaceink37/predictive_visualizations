@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Box, Code, Group, Text } from "@mantine/core";
-import { Navigation } from "../components/navigation";
+import { Navigation, navigationDefinition } from "../components/navigation";
 
 type PingState =
   | { status: "idle" | "loading"; data: null; error: null }
@@ -107,7 +107,7 @@ export default function HomePage() {
       }}
     >
       {/* Your responsive nav (top on small, side on large, per your component) */}
-      <Navigation />
+      <Navigation definition={navigationDefinition} variant="sidebar" />
 
       {/* Main content: canvas fills remaining space */}
       <Box style={{ flex: 1, minHeight: 0 }}>

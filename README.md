@@ -1,5 +1,8 @@
 # PredictiveVisualizations
 
+
+# NX Section
+
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
 ✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
@@ -80,7 +83,7 @@ Nx Console is an editor extension that enriches your developer experience. It le
 
 [Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-## Useful links
+### Useful links
 
 Learn more:
 
@@ -94,3 +97,30 @@ And join the Nx community:
 - [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
 - [Our Youtube channel](https://www.youtube.com/@nxdevtools)
 - [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+
+## Python Section
+
+Install python 3.14\
+Install poetry. NOTE: You will need to manually set you PATH\
+Have poetry install deps:\
+```aiignore
+poetry install
+```
+
+Run the app:
+```sh
+poetry run uvicorn app.main:app --reload --port 8001
+```
+
+Quit Python prompt:\
+
+```sh
+exit()
+quit()
+```
+### Poetry Commands:
+#### Start python server:
+poetry run uvicorn app.main:app --reload --port 8001
+
+
